@@ -16,4 +16,24 @@
     <color name="primaryTextColor">#000000</color>
 
     <color name="secondaryTextColor">#000000</color>
+
+
+
+
+    <color name="seafoam">#c8e6c9</color>
+
+    <color name="primaryLightSeafoam">#fbfffc</color>
+
+    <color name="primaryDarkSeafoam">#97b498</color>
+
+
+
+
+    <color name="bluegrey">#b2dfdb</color>
+
+    <color name="primaryLightBluegrey">#e5ffff</color>
+
+    <color name="primaryDarkBluegrey">#82ada9</color>
+
+
 </resources>
