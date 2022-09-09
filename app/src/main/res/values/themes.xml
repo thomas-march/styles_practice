@@ -17,6 +17,7 @@
     <style name="EditTextCustom" parent="android:style/Widget.EditText">
         <item name="android:backgroundTint">@color/seafoam</item>
         <item name="android:textColor">@color/primaryDarkSeafoam</item>
+        <item name="android:textColorHint">@color/primaryDarkSeafoam</item>
         <item name="android:padding">@dimen/editTextPadding</item>
         <item name="android:layout_width">@dimen/editTextWidth</item>
         <item name="android:layout_height">@dimen/editTextHeight</item>

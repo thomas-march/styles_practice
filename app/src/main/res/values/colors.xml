@@ -7,9 +7,9 @@
 
     <color name="primaryDarkColor">#a6c17d</color>
 
-    <color name="secondaryColor">#f8f9de</color>
+    <color name="secondaryColor">#C7CA7F</color>
 
-    <color name="secondaryLightColor">#ffffff</color>
+    <color name="secondaryLightColor">#9EC092</color>
 
     <color name="secondaryDarkColor">#c5c6ac</color>
 
@@ -24,7 +24,7 @@
 
     <color name="primaryLightSeafoam">#fbfffc</color>
 
-    <color name="primaryDarkSeafoam">#97b498</color>
+    <color name="primaryDarkSeafoam">#8FBF91</color>
 
 
 
