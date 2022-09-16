@@ -1,92 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
 
-<GridLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background = ""
-    android:columnCount="3"
-    android:rowCount="3"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/greatDay"
         style="@style/TextViewCustom"
         android:layout_width="215dp"
         android:layout_height="48dp"
-        android:layout_column="0"
-        android:layout_row="2"
-        android:padding="@dimen/textViewPadding"
+        android:layout_below="@id/editTextPersonName"
+        android:layout_alignParentLeft="true"
         android:layout_marginLeft="@dimen/textViewMargin"
+        android:padding="@dimen/textViewPadding"
         android:text="Have a great day today!"
-        android:textSize="@dimen/textSize"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.075"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.243" />
+        android:textSize="@dimen/textSize" />
 
     <Button
         android:id="@+id/button"
         style="@style/TextViewCustom"
-        android:layout_width="@dimen/buttonHeight"
-        android:layout_height="@dimen/buttonWidth"
-        android:text="Extra Confidence!"
-        android:textSize="10sp"
-        android:layout_column="0"
-        android:layout_row="3"
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="@dimen/buttonHeight"
+        android:layout_below="@id/buttonsBelow"
+        android:layout_alignParentLeft="true"
         android:layout_marginTop="@dimen/buttonMargin"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.948"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.628" />
+        android:layout_toLeftOf="@+id/button2"
+        android:text="Extra Confidence!"
+        android:textSize="10sp" />
 
     <Button
         android:id="@+id/button2"
         style="@style/TextViewCustom"
-        android:layout_width="@dimen/buttonHeight"
-        android:layout_height="@dimen/buttonWidth"
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="@dimen/buttonHeight"
         android:layout_row="3"
         android:layout_column="1"
+        android:layout_below="@id/buttonsBelow"
         android:layout_marginTop="@dimen/buttonMargin"
+        android:layout_toLeftOf="@+id/button3"
         android:text="Good luck!"
-        android:textSize="10sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.63" />
+        android:textSize="10sp" />
 
     <Button
         android:id="@+id/button3"
         style="@style/TextViewCustom"
-        android:layout_width="@dimen/buttonHeight"
-        android:layout_height="@dimen/buttonWidth"
-        android:text="Lots of kindness!"
-        android:textSize="10sp"
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="@dimen/buttonHeight"
+        android:layout_below="@id/buttonsBelow"
+        android:layout_alignParentRight="true"
         android:layout_marginTop="@dimen/buttonMargin"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.63" />
+        android:text="Lots of kindness!"
+        android:textSize="10sp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/dear"
         style="@style/TextViewCustom"
         android:layout_width="@dimen/textViewWidth"
         android:layout_height="@dimen/textViewHeight"
@@ -95,49 +64,33 @@
         android:layout_marginLeft="@dimen/textViewMargin"
         android:padding="@dimen/textViewPadding"
         android:text="Dear"
-        android:textSize="@dimen/textSize"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.075"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.028" />
+        android:textSize="@dimen/textSize" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editTextPersonName"
         style="@style/EditTextCustom"
-        android:layout_column="0"
-        android:layout_row="1"
         android:layout_width="@dimen/editTextWidth"
         android:layout_height="@dimen/editTextHeight"
-        android:padding="@dimen/editTextPadding"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_below="@id/dear"
         android:layout_marginLeft="@dimen/editTextMargin"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125" />
+        android:inputType="textPersonName"
+        android:padding="@dimen/editTextPadding" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/buttonsBelow"
         style="@style/TextViewCustom"
         android:layout_width="223dp"
         android:layout_height="58dp"
         android:layout_row="0"
         android:layout_column="1"
+        android:layout_below="@id/greatDay"
         android:layout_marginLeft="@dimen/textViewMargin"
         android:padding="@dimen/textViewPadding"
         android:text="Click the buttons below for"
-        android:textSize="@dimen/textSize"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.438" />
-</GridLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textSize="@dimen/textSize" />
+
+</RelativeLayout>
