@@ -13,7 +13,8 @@
         android:layout_height="48dp"
         android:layout_below="@id/editTextPersonName"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="@dimen/textViewMargin"
+        android:layout_gravity="left"
+        android:gravity="bottom"
         android:padding="@dimen/textViewPadding"
         android:text="Have a great day today!"
         android:textSize="@dimen/textSize" />
@@ -24,10 +25,14 @@
         android:layout_width="@dimen/buttonWidth"
         android:layout_height="@dimen/buttonHeight"
         android:layout_below="@id/buttonsBelow"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/buttonMarginHz"
         android:layout_marginTop="@dimen/buttonMargin"
+        android:layout_marginRight="@dimen/buttonMarginHz"
         android:layout_toLeftOf="@+id/button2"
-        android:text="Extra Confidence!"
+        android:gravity="center"
+        android:text="Guts!"
         android:textSize="10sp" />
 
     <Button
@@ -38,8 +43,11 @@
         android:layout_row="3"
         android:layout_column="1"
         android:layout_below="@id/buttonsBelow"
+        android:layout_gravity="center"
         android:layout_marginTop="@dimen/buttonMargin"
+        android:layout_marginRight="@dimen/buttonMarginHz"
         android:layout_toLeftOf="@+id/button3"
+        android:gravity="center"
         android:text="Good luck!"
         android:textSize="10sp" />
 
@@ -50,8 +58,11 @@
         android:layout_height="@dimen/buttonHeight"
         android:layout_below="@id/buttonsBelow"
         android:layout_alignParentRight="true"
+        android:layout_gravity="right"
         android:layout_marginTop="@dimen/buttonMargin"
-        android:text="Lots of kindness!"
+        android:layout_marginRight="@dimen/buttonMarginHz"
+        android:gravity="center"
+        android:text="Kindness!"
         android:textSize="10sp" />
 
     <TextView
@@ -59,9 +70,7 @@
         style="@style/TextViewCustom"
         android:layout_width="@dimen/textViewWidth"
         android:layout_height="@dimen/textViewHeight"
-        android:layout_row="0"
-        android:layout_column="0"
-        android:layout_marginLeft="@dimen/textViewMargin"
+        android:layout_gravity="left"
         android:padding="@dimen/textViewPadding"
         android:text="Dear"
         android:textSize="@dimen/textSize" />
@@ -71,10 +80,8 @@
         style="@style/EditTextCustom"
         android:layout_width="@dimen/editTextWidth"
         android:layout_height="@dimen/editTextHeight"
-        android:layout_row="1"
-        android:layout_column="0"
         android:layout_below="@id/dear"
-        android:layout_marginLeft="@dimen/editTextMargin"
+        android:layout_gravity="left"
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName"
@@ -83,12 +90,11 @@
     <TextView
         android:id="@+id/buttonsBelow"
         style="@style/TextViewCustom"
-        android:layout_width="223dp"
-        android:layout_height="58dp"
-        android:layout_row="0"
-        android:layout_column="1"
+        android:layout_width="@dimen/textViewWidth"
+        android:layout_height="@dimen/textViewHeight"
         android:layout_below="@id/greatDay"
         android:layout_marginLeft="@dimen/textViewMargin"
+        android:layout_marginTop="@dimen/textViewMargin"
         android:padding="@dimen/textViewPadding"
         android:text="Click the buttons below for"
         android:textSize="@dimen/textSize" />

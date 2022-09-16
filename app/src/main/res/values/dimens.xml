@@ -4,12 +4,13 @@
     <dimen name="textViewHeight">40dp</dimen>
     <dimen name="editTextWidth">300dp</dimen>
     <dimen name="editTextHeight">60dp</dimen>
-    <dimen name="textViewMargin">100dp</dimen>
+    <dimen name="textViewMargin">80dp</dimen>
     <dimen name="editTextMargin">50dp</dimen>
-    <dimen name="buttonMargin">75dp</dimen>
+    <dimen name="buttonMargin">25dp</dimen>
+    <dimen name="buttonMarginHz">10dp</dimen>
     <dimen name="textViewPadding">10dp</dimen>
     <dimen name="editTextPadding">20dp</dimen>
-    <dimen name="buttonWidth">100dp</dimen>
+    <dimen name="buttonWidth">105dp</dimen>
     <dimen name="buttonHeight">100dp</dimen>
     <dimen name="textSize">15sp</dimen>
 </resources>
